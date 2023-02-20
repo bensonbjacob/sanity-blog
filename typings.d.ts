@@ -3,13 +3,13 @@ type Base = {
   _id: string;
   _rev: string;
   _type: string;
-  updatedAt: string;
+  _updatedAt: string;
 };
 
 interface Post extends Base {
-  author: AuthStoreOptions;
+  author: Author;
   body: Block[];
-  categories: Category;
+  categories: Category[];
   mainImage: Image;
   slug: Slug;
   title: string;
